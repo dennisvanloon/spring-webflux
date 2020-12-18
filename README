@@ -2,8 +2,25 @@
 brew tap pivotal/tap
 brew install springboot
 
-## Create a project folder and go in there
+## Go to the place where you want to create the project and create it
 
 spring init --list
 spring init --java-version=1.8 --packaging=jar --dependencies=webflux,data-r2dbc,lombok,h2,postgresql spring-webflux
 
+## Add dependencies for swagger
+
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+    <version>3.0.0-SNAPSHOT</version>
+</dependency>
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>3.0.0-SNAPSHOT</version>
+</dependency>
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-spring-webflux</artifactId>
+    <version>3.0.0-SNAPSHOT</version>
+</dependency>
