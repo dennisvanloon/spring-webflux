@@ -1,0 +1,9 @@
+## Install Spring Boot CLI
+brew tap pivotal/tap
+brew install springboot
+
+## Create a project folder and go in there
+
+spring init --list
+spring init --java-version=1.8 --packaging=jar --dependencies=webflux,data-r2dbc,lombok,h2,postgresql spring-webflux
+
